@@ -87,19 +87,19 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
+//        if (id == R.id.nav_camera) {
+//            // Handle the camera action
+//        } else if (id == R.id.nav_gallery) {
+//
+//        } else if (id == R.id.nav_slideshow) {
+//
+//        } else if (id == R.id.nav_manage) {
+//
+//        } else if (id == R.id.nav_share) {
+//
+//        } else if (id == R.id.nav_send) {
+//
+//        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -116,7 +116,11 @@ public class MainActivity extends AppCompatActivity
 
         // Add user marker
         LatLng user = new LatLng(34.058929, -117.818898);
-        mMap.addMarker(new MarkerOptions().position(user).title("User"));
+        BitmapDescriptor userIcon = BitmapDescriptorFactory.fromResource(R.mipmap.target_sm);
+        mMap.addMarker(new MarkerOptions()
+                .position(user)
+                .title("You are here")
+                .icon(userIcon));
 
         // Add vending markers
         ArrayList<VenderLocation> vAry = new ArrayList<>();

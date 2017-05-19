@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:title="Food">
+        <menu>
+            <item android:title="Bldg 1 Bldg. One" />
+            <item android:title="Bldg 2 College of Agriculture" />
+            <item android:title="Bldg 3 Science Laboratory" />
+            <item android:title="Bldg 1 Bldg. One" />
+            <item android:title="Bldg 2 College of Agriculture" />
+            <item android:title="Bldg 3 Science Laboratory" />
+        </menu>
+    </item>
+    <item android:title="Drinks">
+        <menu>
+            <item android:title="Bldg 1 Bldg. One" />
+            <item android:title="Bldg 2 College of Agriculture" />
+            <item android:title="Bldg 3 Science Laboratory" />
+            <item android:title="Bldg 1 Bldg. One" />
+            <item android:title="Bldg 2 College of Agriculture" />
+            <item android:title="Bldg 3 Science Laboratory" />
+        </menu>
+    </item>
+    <item android:title="Both">
+        <menu>
+            <item android:title="Bldg 1 Bldg. One" />
+            <item android:title="Bldg 2 College of Agriculture" />
+            <item android:title="Bldg 3 Science Laboratory" />
+        </menu>
+    </item>
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
@@ -20,17 +43,5 @@
             android:title="Tools" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
-
 </menu>
+
