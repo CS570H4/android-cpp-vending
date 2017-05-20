@@ -2,6 +2,7 @@ package com.snack.navbarapp;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
@@ -21,6 +22,8 @@ import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 
@@ -120,7 +123,8 @@ public class MainActivity extends AppCompatActivity
         mMap.addMarker(new MarkerOptions()
                 .position(user)
                 .title("You are here")
-                .icon(userIcon));
+                .icon(userIcon)
+                .anchor(0.5f,0.5f));
 
         // Add vending markers
         ArrayList<VenderLocation> vAry = new ArrayList<>();
@@ -160,6 +164,11 @@ public class MainActivity extends AppCompatActivity
         vAry.add(new VenderLocation(new LatLng(34.05625, -117.82579), "Bldg. 77", "Kellogg West Main Lodge", "drink"));
         vAry.add(new VenderLocation(new LatLng(34.05034, -117.81468), "Bldg. 220", "CTTi", "drink"));
 
+        Polyline line = mMap.addPolyline(new PolylineOptions()
+                .add(user, new LatLng(34.05969, -117.82009))
+                .width(5)
+                .color(Color.BLUE));
+
         for (Object v : vAry) {
             String type = ((VenderLocation) v).type;
             BitmapDescriptor icon;
@@ -173,7 +182,8 @@ public class MainActivity extends AppCompatActivity
             mMap.addMarker(new MarkerOptions()
                     .position(((VenderLocation) v).latLng)
                     .title(((VenderLocation) v).bldgNum)
-                    .icon(icon));
+                    .icon(icon)
+                    .anchor(0.5f,0.5f));
         }
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
