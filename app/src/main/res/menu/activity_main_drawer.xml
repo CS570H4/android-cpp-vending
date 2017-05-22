@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Food">
-        <menu>
-            <item android:title="Bldg 1 Bldg. One" />
-            <item android:title="Bldg 2 College of Agriculture" />
-            <item android:title="Bldg 3 Science Laboratory" />
-            <item android:title="Bldg 1 Bldg. One" />
-            <item android:title="Bldg 2 College of Agriculture" />
-            <item android:title="Bldg 3 Science Laboratory" />
-        </menu>
-    </item>
-    <item android:title="Drinks">
-        <menu>
-            <item android:title="Bldg 1 Bldg. One" />
-            <item android:title="Bldg 2 College of Agriculture" />
-            <item android:title="Bldg 3 Science Laboratory" />
-            <item android:title="Bldg 1 Bldg. One" />
-            <item android:title="Bldg 2 College of Agriculture" />
-            <item android:title="Bldg 3 Science Laboratory" />
-        </menu>
-    </item>
     <item android:title="Both">
         <menu>
             <item android:title="Bldg 1 Bldg. One" />
             <item android:title="Bldg 2 College of Agriculture" />
             <item android:title="Bldg 3 Science Laboratory" />
+            <item android:title="Bldg 4 Biotechnology" />
+            <item android:title="Bldg 8 College of Science" />
+            <item android:title="Bldg 9 College of Engineering" />
+        </menu>
+    </item>
+    <item android:title="Food">
+        <menu>
+            <item android:title="Bldg 13 Art Dept./Engineering Annex" />
+            <item android:title="Bldg 79 Collins College" />
+        </menu>
+    </item>
+    <item android:title="Drinks">
+        <menu>
+            <item android:title="Bldg 21 Montecito Residence Hall" />
+            <item android:title="Bldg 24 Music" />
+            <item android:title="Bldg 29 W.K. Kellogg Horse Center" />
         </menu>
     </item>
     <group android:checkableBehavior="single">
